@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7EEED"
+    android:orientation="vertical"
+    tools:context=".show_book">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/studentHistorytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue700"
+        android:elevation="4dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AlertDialog.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/toolbarTitle"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/liblogo" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp"
+        android:text="Search Book ClassWise"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/blue300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/book_classwise"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:hint="Book - Class/Grade" />
+
+    <Button
+        android:id="@+id/buttonsearch"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/search"
+        android:gravity="center"
+
+        />
+
+
+    <ListView
+        android:id="@+id/showBookClassListView"
+        android:layout_width="422dp"
+        android:layout_height="369dp"
+        android:layout_marginTop="75dp" />
+
+
+</LinearLayout>
